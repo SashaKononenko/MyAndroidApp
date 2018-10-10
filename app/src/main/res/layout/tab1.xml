@@ -1,0 +1,402 @@
+ <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:paddingBottom="@dimen/activity_vertical_margin"
+        android:paddingLeft="@dimen/activity_horizontal_margin"
+        android:paddingRight="@dimen/activity_horizontal_margin"
+        android:paddingTop="@dimen/activity_vertical_margin"
+        android:id="@+id/Setting"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/background">
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/zone1">
+
+        <TextView
+            android:text="@string/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView1"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView1"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMinus1"
+                android:textAllCaps="false"
+                android:onClick="clickMinus1"
+                android:layout_below="@+id/textView1"
+                android:layout_toStartOf="@+id/textView1"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_toEndOf="@+id/buttonMinus1"
+                android:id="@+id/second1"
+                android:textOff="0"
+                android:textOn="0"
+                android:onClick="clickSecond1"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="true"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textView1"
+                android:layout_toEndOf="@+id/second1"
+                android:id="@+id/centiseconds1"
+                android:onClick="clickCentiseconds1"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="false"
+                android:textOff="0"
+                android:textOn="0"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPlus1"
+                android:textAllCaps="false"
+                android:onClick="clickPlus1"
+                android:layout_below="@+id/textView1"
+                android:layout_toEndOf="@+id/textView1"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/zone2">
+
+        <TextView
+            android:text="@string/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView2"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMinus2"
+                android:textAllCaps="false"
+                android:onClick="clickMinus2"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_alignBaseline="@+id/second2"
+                android:layout_alignBottom="@+id/second2"
+                android:layout_toStartOf="@+id/second2"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/second2"
+                android:textOff="0"
+                android:textOn="0"
+                android:onClick="clickSecond2"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="true"
+                android:layout_below="@+id/textView2"
+                android:layout_toStartOf="@+id/centiseconds2"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/centiseconds2"
+                android:onClick="clickCentiseconds2"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="false"
+                android:textOff="0"
+                android:textOn="0"
+                android:layout_alignBaseline="@+id/buttonPlus2"
+                android:layout_alignBottom="@+id/buttonPlus2"
+                android:layout_toStartOf="@+id/buttonPlus2"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPlus2"
+                android:textAllCaps="false"
+                android:onClick="clickPlus2"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_below="@+id/textView2"
+                android:layout_alignParentEnd="true"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/zone3">
+
+        <TextView
+            android:text="@string/text3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView3"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView3"
+            android:layout_alignParentStart="true">
+
+            <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMinus3"
+                android:textAllCaps="false"
+                android:onClick="clickMinus3"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_alignBaseline="@+id/second3"
+                android:layout_alignBottom="@+id/second3"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/second3"
+                android:textOff="0"
+                android:textOn="0"
+                android:onClick="clickSecond3"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="true"
+                android:layout_below="@+id/textView3"
+                android:layout_toEndOf="@+id/buttonMinus3"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/centiseconds3"
+                android:onClick="clickCentiseconds3"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="false"
+                android:textOff="0"
+                android:textOn="0"
+                android:layout_alignBaseline="@+id/second3"
+                android:layout_alignBottom="@+id/second3"
+                android:layout_toEndOf="@+id/second3"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPlus3"
+                android:textAllCaps="false"
+                android:onClick="clickPlus3"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_alignBaseline="@+id/centiseconds3"
+                android:layout_alignBottom="@+id/centiseconds3"
+                android:layout_toEndOf="@+id/centiseconds3"
+                android:layout_weight="1" />
+        </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:id="@+id/zone4">
+
+            <TextView
+            android:text="@string/text4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:textAlignment="center" />
+
+            <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView4"
+            android:layout_alignParentStart="true"
+            android:id="@+id/ti">
+
+            <Button
+                android:text="-"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonMinus4"
+                android:textAllCaps="false"
+                android:onClick="clickMinus4"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_alignBaseline="@+id/second4"
+                android:layout_alignBottom="@+id/second4"
+                android:layout_alignParentStart="true"
+                android:layout_weight="1" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/second4"
+                android:textOff="0"
+                android:textOn="0"
+                android:onClick="clickSecond4"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="true"
+                android:layout_below="@+id/textView4"
+                android:layout_toEndOf="@+id/buttonMinus4"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <ToggleButton
+                android:text="ToggleButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/centiseconds4"
+                android:onClick="clickCentiseconds4"
+                android:background="@drawable/toggle_btn_col"
+                android:checked="false"
+                android:textOff="0"
+                android:textOn="0"
+                android:layout_alignBaseline="@+id/second4"
+                android:layout_alignBottom="@+id/second4"
+                android:layout_toEndOf="@+id/second4"
+                android:layout_weight="1"
+                android:textColor="@color/button_col" />
+
+            <Button
+                android:text="+"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/buttonPlus4"
+                android:textAllCaps="false"
+                android:onClick="clickPlus4"
+                android:background="@color/button_col"
+                android:textColor="@color/background"
+                android:layout_alignBaseline="@+id/centiseconds4"
+                android:layout_alignBottom="@+id/centiseconds4"
+                android:layout_toEndOf="@+id/centiseconds4"
+                android:layout_weight="1" />
+
+        </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="false"
+                android:layout_alignParentStart="false"
+                android:layout_below="@+id/ti">
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button"
+                    android:layout_weight="1"
+                    android:background="@color/background" />
+
+                <ToggleButton
+                    android:text="@string/markC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/markC"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:textColor="@color/button_col"
+                    android:textOff="@string/markC"
+                    android:textOn="@string/markC" />
+
+                <ToggleButton
+                    android:text="@string/markDC"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/markDC"
+                    android:layout_weight="1"
+                    android:background="@color/background"
+                    android:textColor="@color/button_col"
+                    android:textOff="@string/markDC"
+                    android:textOn="@string/markDC" />
+
+                <Button
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/button3"
+                    android:layout_weight="1"
+                    android:background="@color/background" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+             android:layout_width="match_parent"
+             android:layout_height="match_parent"
+             android:layout_weight="1"
+             android:id="@+id/zone5">
+
+         </RelativeLayout>
+    </LinearLayout>
+

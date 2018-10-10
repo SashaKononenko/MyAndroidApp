@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Мій додаток</string>
+    <string name="setting">Налаштуваня</string>
+    <string name="text1">Час в верхньому положені</string>
+    <string name="text2">Час в нижньому положені</string>
+    <string name="text3">Час на піднімання</string>
+    <string name="text4">Час на опускання</string>
+    <string name="tab1">Налаштуваня</string>
+    <string name="tab2">Анімація</string>
+    <string name="start">Старт</string>
+    <string name="stop">Стоп</string>
+    <string name="markC">1c</string>
+    <string name="markDC">0.1c</string>
+
+</resources>
